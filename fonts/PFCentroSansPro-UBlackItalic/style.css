@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: local('PF Centro Sans Pro Ultra Black Italic'), local('PF-Centro-Sans-Pro-Ultra-Black-Italic'),
+        url('PFCentroSansPro-UBlackItalic.woff2') format('woff2'),
+        url('PFCentroSansPro-UBlackItalic.woff') format('woff'),
+        url('PFCentroSansPro-UBlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
