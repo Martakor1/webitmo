@@ -5,6 +5,10 @@
 Вторичный Цвет B:
 				
 #FF7579	#C27274	#A9292C	#FF989B	#FFB4B6
+
+Ещё идеи
+https://coolors.co/palette/006ba6-0496ff-ffbc42-d81159-8f2d56
+#006ba6 #0496ff #ffbc42 #d81159 #8f2d56
 */
 
 @font-face {
@@ -15,6 +19,14 @@
         url('fonts/PFCentroSansPro-UBlackItalic/PFCentroSansPro-UBlackItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: local('PF Centro Sans Pro Ultra Black Italic'), local('PF-Centro-Sans-Pro-Ultra-Black-Italic'),
+        url('fonts/PFCentroSansPro-UBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
@@ -37,6 +49,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: local('PF Centro Sans Pro Bold'), local('PF-Centro-Sans-Pro-Bold'),
+        url('fonts/PFCentroSansPro-Bold/PFCentroSansPro-Bold.woff2') format('woff2'),
+        url('fonts/PFCentroSansPro-Bold/PFCentroSansPro-Bold.woff') format('woff'),
+        url('fonts/PFCentroSansPro-Bold/PFCentroSansPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
 body {
     margin: 0;
 }
@@ -53,7 +75,9 @@ a {
 }
 
 header {
-    background-color: #81A1F9;
+    background-color: #0496ff;
+    display: flex;
+    align-items: center;
     margin: 20 auto;
     padding: 0;
     height: 100px;
@@ -63,8 +87,6 @@ header {
 
 header h1 {
     margin: 0 auto;
-    text-align: center;
-    padding-top: 10px;
     color: white;
     font-family: "PF Centro Sans Pro";
     font-style: italic;
@@ -76,7 +98,7 @@ aside {
     margin: 0;
     flex-basis: 200px;
     /* max-width: 200px; */
-    background-color: #A2BAFC;
+    /* background-color: #A2BAFC; */
     border-radius: 10px;
 }
 
@@ -92,11 +114,16 @@ aside li { /* возможно сделать правый aside появляю�
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
-    color: #003e5e;
+    color: #006BA6;
 }
 
 aside a:visited {
-    color: #003e5e;
+    color: #006BA6;
+}
+
+aside a:hover {
+    color: #D81159;
+    text-decoration: underline;
 }
 
 main {
@@ -104,30 +131,76 @@ main {
 }
 .article-preview {
     flex-basis: 100%;
-    background-color: #E3F1FF;
+    /* background-color: #E3F1FF; */
     border-radius: 10px;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     padding: 15px;
 }
 
-.article-preview h2 { /* возможно заменить на класс */
+article h2 { /* возможно заменить на класс */
     margin: 0 0 15px 0;
     font-family: "PF Centro Sans Pro";
     font-weight: 500;
     font-style: italic;
 }
 
-.article-preview img {
-    width: 50%;
+article img {
     border-radius: 5px;
-    margin: 0 10px;
-    float: left;
 }
 
-.article-preview p {
-    margin: 0;
-    display: inline-block;
+.article-preview img {
+    width: 50%;
+    float: left;
+    margin: 0 10px;
+}
+
+.article-full img {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+}  
+
+article p {
+    margin: 0;  
     font-family: "PF Centro Sans Pro";
     font-weight: 400;
     font-style: normal;
+    text-indent: 15px;
+    margin: 5px auto;
+}
+
+.article-preview p {
+    display: inline-block;
+}
+
+.article-full p {
+    display: block;
+}
+
+article a {
+    color: #FFBC42;
+    font-weight: 700;
+}
+
+.article-full h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #023047;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    height: 100px;
+    max-width: 1100px;
+}
+
+footer h2 {
+    margin: 0 0 15px 0;
+    font-family: "PF Centro Sans Pro";
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    margin: 0 auto;
 }
