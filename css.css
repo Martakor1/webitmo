@@ -94,21 +94,25 @@ header h1 {
 }
 
 
-aside {
+.main-aside {
     margin: 0;
     flex-basis: 200px;
     /* max-width: 200px; */
     /* background-color: #A2BAFC; */
     border-radius: 10px;
+    height: fit-content;
+    position:sticky;
+    top: 10;
 }
 
-aside ul {
+
+.main-aside ul {
     margin: 0;
     list-style-type:none;
     padding: 0;
 }
 
-aside li { /* возможно сделать правый aside появляющимся */
+.main-aside li { /* возможно сделать правый aside появляющимся */
     padding: 10px;
     font-family: "PF Centro Sans Pro";
     font-weight: 400;
@@ -117,11 +121,11 @@ aside li { /* возможно сделать правый aside появляю�
     color: #006BA6;
 }
 
-aside a:visited {
+.main-aside a:visited {
     color: #006BA6;
 }
 
-aside a:hover {
+.main-aside a:hover {
     color: #D81159;
     text-decoration: underline;
 }
@@ -129,20 +133,38 @@ aside a:hover {
 main {
     margin: 0 20px;
 }
+
 .article-preview {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     /* background-color: #E3F1FF; */
-    border-radius: 10px;
-    margin: 0 0 10px 0;
+    /* border-radius: 10px; */
     padding: 15px;
 }
 
-article h2 { /* возможно заменить на класс */
-    margin: 0 0 15px 0;
-    font-family: "PF Centro Sans Pro";
-    font-weight: 500;
-    font-style: italic;
+p {
+    margin: 0;
 }
+
+article h1, h2, h3 {
+    font-family: "PF Centro Sans Pro";
+    font-style: italic;
+    font-weight: 500;
+    
+}
+
+article h2, h3 {
+    margin: 30px 0 15px 0;
+}
+
+article h1 {
+    margin: 0px 0 15px 0;
+}
+
+.article-preview h2 { /* возможно заменить на класс */
+    margin: 0 0 15px 0;
+}
+
+
 
 article img {
     border-radius: 5px;
@@ -160,13 +182,14 @@ article img {
     display: block;
 }  
 
-article p {
-    margin: 0;  
+* {
     font-family: "PF Centro Sans Pro";
     font-weight: 400;
     font-style: normal;
+}
+
+article p {
     text-indent: 15px;
-    margin: 5px auto;
 }
 
 .article-preview p {
@@ -175,6 +198,7 @@ article p {
 
 .article-full p {
     display: block;
+    margin: 5px auto;
 }
 
 article a {
@@ -182,11 +206,11 @@ article a {
     font-weight: 700;
 }
 
-.article-full h2 {
+.article-full h1 {
     text-align: center;
 }
 
-footer {
+.site-footer {
     background-color: #023047;
     display: flex;
     align-items: center;
@@ -196,11 +220,63 @@ footer {
     max-width: 1100px;
 }
 
-footer h2 {
+.site-footer h2 {
     margin: 0 0 15px 0;
     font-family: "PF Centro Sans Pro";
     font-weight: 900;
     font-style: normal;
     color: white;
     margin: 0 auto;
+}
+
+
+.comment-block {
+    margin-top: 40px;
+}
+.comment-block ul {
+    padding: 0;
+}
+
+.comment-block li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    background-color: #eef8ff;
+    padding: 10px;
+}
+
+.comment-block address {
+    margin: 0 0 7 0;
+}
+
+.comment-block li article footer {
+    text-align: right;
+}
+
+.basic-table {
+    background-color: #eef8ff;
+    font-family: "PF Centro Sans Pro";
+    font-weight: 400;
+    font-style: normal;
+    border-collapse: collapse;
+}
+
+.basic-table tbody tr:nth-child(odd) {
+    background-color: #BBE7FF;
+}
+
+.basic-table td {
+    padding-left: 10px;
+}
+
+.basic-table tbody tr:hover {
+    background-color: #006BA6;
+    color: white;
+}
+
+.youtube-div iframe {
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
 }

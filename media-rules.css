@@ -1,0 +1,33 @@
+@media (max-width: 920px) {
+    header {
+        background-color: #D81159;
+    }
+    .main-container {
+        display: grid;
+        column-count: 2;
+    }
+    .main-aside {
+        width: fit-content;
+    }
+    .right-aside {
+        order: 3;
+        break-after: always;
+        top:205px; /* костыль - в идеале
+        не знаем высоту left-aside
+        */
+    }
+    .left-aside {
+        order: 1;
+    }
+    main {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 4; /* вот эта штука позволяет добавить
+        3тью виртуальную ячейку, поэтому две первых
+        выравниваются вверх! */
+        order: 2;
+    }
+    table {
+        display: none;
+    }
+}

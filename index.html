@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name = "description" content = "Главная страница блога ортогонального контента." >
     <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="media-rules.css">
   </head>
   <body>
     <header>
       <h1>Сайт ортогонального контента</h1>
     </header>
     <div class="main-container">
-      <aside class="left-aside">
+      <aside class="main-aside left-aside">
         <nav>
           <ul>
             <li><a href="index.html">Программирование</a></li>
@@ -38,8 +39,15 @@
             <a href="#">Читать далее...</a>
           </p>
         </article>
+        <article class="article-preview">
+          <h2>Пример поста без превьюшного изображения</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni at totam fugiat dicta? Perspiciatis minus delectus veniam inventore labore aspernatur ut, deserunt suscipit, quibusdam voluptatum error harum. Velit, distinctio fugiat.
+            <a href="#">Читать далее...</a>
+          </p>
+        </article>
       </main>
-      <aside class="right-aside">
+      <aside class="main-aside right-aside">
         <nav>
           <ul>
             <li><a href="index.html">Программирование</a></li>
@@ -51,7 +59,7 @@
         </nav>
       </aside>
     </div>
-    <footer>
+    <footer class="site-footer">
       <h2>Здесь должен быть подвал</h2>
     </footer>
   </body>
