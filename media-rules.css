@@ -1,8 +1,9 @@
 @media (max-width: 920px) {
-    header {
+    body header {
         background-color: #D81159;
     }
     .main-container {
+        width: 100%;
         display: grid;
         column-count: 2;
     }
@@ -11,7 +12,6 @@
     }
     .right-aside {
         order: 3;
-        break-after: always;
         top:205px; /* костыль - в идеале
         не знаем высоту left-aside
         */
@@ -20,6 +20,9 @@
         order: 1;
     }
     main {
+        min-width: 0; /*нужно, если он grid элемент.
+        Позволяет не влиять содержимому контента на реальную
+        ширину? позволяет вызывать overflow у детей*/
         grid-column-start: 2;
         grid-row-start: 1;
         grid-row-end: 4; /* вот эта штука позволяет добавить
@@ -27,7 +30,64 @@
         выравниваются вверх! */
         order: 2;
     }
-    table {
+}
+
+@media (max-width: 576px) {
+    body header {
+        background-color: green;
+        margin: 0 0 20px 0;
+        width: 100%;
+        border-radius: 0;
+        height: 80px;
+        position: fixed;
+    }
+
+    .main-container {
+        padding-top: 100px;
+    }
+
+    .youtube-div iframe{
+        width: 100%;
+    }
+
+    body header h1, body header h2 {
+        font-size: 20px;
+    }
+    .article-full img {
+        width: 100%;
+    }
+    .article-preview {
+        padding: 15px 0;
+    }
+
+
+    .burger-button {
+        width: 20px;
+        height: 8px;
+        background: url(burger.svg) no-repeat;
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        display: block;
+        flex-shrink: 0;
+    }
+
+    .left-aside {
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        border-radius: 0;
+        top: 80px;
+    }
+
+    .left-aside li {
+        text-align: center;
+    }
+
+    .right-aside {
         display: none;
     }
+
 }
