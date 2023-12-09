@@ -5,11 +5,5 @@ window.addEventListener("load", () => {
     textNode.style.display = "block";
     textNode.appendChild(document.createTextNode(loadTime + "мс - Время загрузки страницы"));
     document.getElementsByClassName("site-footer")[0]
-    .appendChild(textNode)
+    .appendChild(textNode);
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     var loadTime = window.performance.getEntriesByType('navigation')[0].domContentLoadedEventStart;
-//     document.getElementsByClassName("site-footer")[0]
-//     .appendChild(document.createTextNode(loadTime))
-// })

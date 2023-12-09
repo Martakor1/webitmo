@@ -7,12 +7,9 @@
         display: grid;
         column-count: 2;
     }
-    .main-aside {
-        width: fit-content;
-    }
     .right-aside {
         order: 3;
-        top:205px; /* костыль - в идеале
+        top:220px; /* костыль - в идеале
         не знаем высоту left-aside
         */
     }

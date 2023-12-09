@@ -20,4 +20,20 @@ $(function () {
             }
         }
     });
+
+    function highlightCurrentLinkNav() {
+        var ulElem = document.getElementsByClassName("left-aside")[0]
+        .getElementsByTagName("ul")[0];
+        console.log(ulElem)
+        var currentSectionName = location.pathname.split("/")[1]
+        var aElems = Array.from(ulElem.getElementsByTagName("a"))
+        aElems.forEach(element => {
+            if (element.getAttribute("href").split("/")[0] == currentSectionName) {
+                element.classList.add("selected");
+            }
+        });
+    }
+
+    highlightCurrentLinkNav();
 });
+

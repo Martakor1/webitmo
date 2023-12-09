@@ -111,7 +111,7 @@ body header h1, body header h2 {
     border-radius: 10px;
     height: fit-content;
     position:sticky;
-    top: 10;
+    top: 10px;
 }
 
 
@@ -136,6 +136,10 @@ body header h1, body header h2 {
 
 .main-aside a:hover {
     color: #D81159;
+    text-decoration: underline;
+}
+
+.main-aside a.selected {
     text-decoration: underline;
 }
 
