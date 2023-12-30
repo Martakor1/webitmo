@@ -264,6 +264,28 @@ article a {
     text-align: right;
 }
 
+.comment-form {
+    background-color: #eef8ff;
+    padding: 10px;
+}
+
+.comment-form input, .comment-form textarea {
+    display: block;
+    margin: 5px 0;
+    border: 0;
+    font-family: "PF Centro Sans Pro";
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.comment-form button {
+    background-color: #006BA6;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+
 .basic-table {
     background-color: #eef8ff;
     font-family: "PF Centro Sans Pro";
