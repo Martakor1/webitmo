@@ -25,7 +25,6 @@ $(function () {
         var webItmoAppend = 1
         var ulElem = document.getElementsByClassName("left-aside")[0]
         .getElementsByTagName("ul")[0];
-        console.log(ulElem)
         var currentSectionName = location.pathname.split("/")[1 + webItmoAppend]
         var aElems = Array.from(ulElem.getElementsByTagName("a"))
         aElems.forEach(element => {
